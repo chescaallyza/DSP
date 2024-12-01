@@ -1,0 +1,115 @@
+/* Retain the default Streamlit layout but change the background color */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #232a2b; /* Your desired background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Box */
+.title-box {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+
+/* Description Box */
+.description-box {
+    background-color: #f9f9f9;  /* Light gray background for description boxes */
+    padding: 18px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Object Label Styling */
+.object-label {
+    font-weight: bold;
+    color: #18283e; /* A blue color for the label */
+}
+
+/* Object Description Styling */
+.object-definition {
+    color: #111111; /* A darker gray for the description text */
+}
+
+/* Add some space between each description box */
+.description-box + .description-box {
+    margin-top: 18px;
+}
+
+/* Styling for the video feed container */
+.stImage {
+    border-radius: 4px;  /* Add border-radius to give rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    object-fit: cover;  /* Ensures the image/video fits within the container */
+}
+
+/* Layout adjustments for two-column display */
+.stColumns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stColumns .stColumn {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.stColumns .stColumn:last-child {
+    margin-right: 0;
+}
+
+/* Table Styling for Object and Frame Count */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center; /* Centering the text inside the table */
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #31627e;
+    font-weight: bold;
+    text-align: center; /* Ensure headers are centered */
+}
+
+td {
+    text-align: center; /* Center the content of each cell */
+}
+
+/* Custom button styling for upload and live detection */
+.stButton > button {
+    background-color: rgb(38, 39, 48); /* Change to your preferred button color */
+    color: rgb(249, 246, 246);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: rgb(38, 39, 48); /* Darken the button on hover */
+}
+
+/* Additional custom styling for other elements */
+.stSelectbox, .stFileUploader, .stSlider {
+    margin-bottom: 20px;
+}
